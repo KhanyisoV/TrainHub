@@ -1,4 +1,4 @@
-#TrainHub - Training Course Management System
+# TrainHub - Training Course Management System
 
 A comprehensive Learning Management System (LMS) built with ASP.NET Core and React, designed to facilitate online course creation, enrollment, and progress tracking with automated certificate generation.
 
