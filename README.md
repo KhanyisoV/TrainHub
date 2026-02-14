@@ -365,46 +365,6 @@ TrainHub/
 
 
 
-## 🗺️ Roadmap
-
-### Phase 1: MVP (Current)
-- [x] User authentication and authorization
-- [x] Course creation and management
-- [x] Enrollment system
-- [x] Progress tracking
-- [x] Certificate generation
-- [x] Email notifications
-- [x] Basic dashboards
-
-### Phase 2: Enhancements
-- [ ] Course reviews and ratings
-- [ ] Discussion forums
-- [ ] Quiz and assessment system
-- [ ] Live video integration
-- [ ] Advanced analytics
-- [ ] Mobile app (React Native)
-- [ ] Multi-language support
-
-### Phase 3: Enterprise Features
-- [ ] Bulk user import
-- [ ] SCORM compliance
-- [ ] Integration with external LMS
-- [ ] Advanced reporting
-- [ ] White-label options
-- [ ] API for third-party integrations
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
 ### Code Style
 
 - Backend: Follow C# coding conventions
@@ -421,26 +381,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 📧 Contact
-
-**Your Name** - [@yourtwitter](https://twitter.com/yourtwitter) - your.email@example.com
-
-**Project Link:** [https://github.com/yourusername/trainhub](https://github.com/yourusername/trainhub)
-
-**Live Demo:** [https://trainhub-demo.azurewebsites.net](https://trainhub-demo.azurewebsites.net)
-
----
-
-## 🙏 Acknowledgments
-
-- [ASP.NET Core](https://docs.microsoft.com/aspnet/core)
-- [React Documentation](https://react.dev)
-- [Entity Framework Core](https://docs.microsoft.com/ef/core)
-- [Tailwind CSS](https://tailwindcss.com)
-- [The Code Group](https://www.thecodegroup.co.za) - Inspiration for this project
-- All contributors who help improve this project
-
----
 
 ## 📸 Screenshots
 
