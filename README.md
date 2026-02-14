@@ -353,38 +353,14 @@ GET    /api/certificates/verify/{certificateNumber} - Verify certificate
 
 ```
 TrainHub/
-├── TrainHub.API/              # Web API Layer
-│   ├── Controllers/           # API Controllers
-│   ├── Middleware/            # Custom middleware
-│   └── Program.cs             # Application entry point
-│
-├── TrainHub.Core/             # Domain Layer
-│   ├── Models/                # Entity models
-│   ├── Interfaces/            # Repository interfaces
-│   └── Enums/                 # Enumerations
-│
-├── TrainHub.Application/      # Application Layer
-│   ├── DTOs/                  # Data Transfer Objects
-│   ├── Services/              # Business logic
-│   ├── Validators/            # FluentValidation validators
-│   └── Mappings/              # AutoMapper profiles
-│
-├── TrainHub.Infrastructure/   # Infrastructure Layer
-│   ├── Data/                  # DbContext and migrations
-│   ├── Repositories/          # Repository implementations
-│   └── Services/              # External services (Email, PDF, etc.)
-│
-├── TrainHub.Tests/            # Unit and Integration Tests
-│
-└── trainhub-client/           # React Frontend
-    ├── public/                # Static files
-    └── src/
-        ├── components/        # React components
-        ├── pages/             # Page components
-        ├── services/          # API calls
-        ├── context/           # Context providers
-        ├── types/             # TypeScript types
-        └── utils/             # Utility functions
+├── Controllers/
+├── Data/
+├── DTOs/
+├── Models/
+├── Services/
+├── Interfaces/
+├── Program.cs
+└── TrainHub.csproj
 ```
 
 
