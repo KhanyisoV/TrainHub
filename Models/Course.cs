@@ -4,11 +4,12 @@ namespace TrainHub.Models
 {
     public class Course
     {
-
         [Key]
         public int Id { get; set; }
+
         [Required]
         public string Title { get; set; }
+
         [Required]
         public string Description { get; set; }
 
@@ -29,13 +30,10 @@ namespace TrainHub.Models
         public DateTime DateCreated { get; set; }
         public DateTime DateUpdated { get; set; }
 
-
         // nav
 
         public User Lecturer { get; set; }
         public ICollection<Lesson> Lessons { get; set; }
-        public ICollection <Enrollment> Enrollments { get; set; }
-
-
+        public ICollection<Enrollment> Enrollments { get; set; }
     }
 }

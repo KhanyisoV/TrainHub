@@ -6,7 +6,6 @@ namespace TrainHub.Models
 {
     public class Enrollment
     {
-
         [Key]
         public int Id { get; set; }
 
@@ -15,14 +14,14 @@ namespace TrainHub.Models
 
         public DateTime EnrollmentDate { get; set; }
 
-        public bool Status {  get; set; }
-        public DateTime ? CompletionDate { get; set; }
+        public bool Status { get; set; }
+        public DateTime? CompletionDate { get; set; }
+        public DateTime UpdatedAt { get; set; }
 
         [Required]
         public string PaymentStatus { get; set; }
 
         public decimal PaymentAmount { get; set; }
-
 
         //nav
 
@@ -31,8 +30,5 @@ namespace TrainHub.Models
 
         public Certificate Certificate { get; set; }
         public ICollection<Progress> ProgressRecords { get; set; }
-
-
-
     }
 }

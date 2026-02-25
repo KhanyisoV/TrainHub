@@ -21,10 +21,6 @@ namespace TrainHub.Models
 
         //nav
         public ICollection<Progress> ProgressRecords { get; set; }
-        public User Course { get; set; }
-
-        
-
-        
+        public Course Course { get; set; }
     }
 }
