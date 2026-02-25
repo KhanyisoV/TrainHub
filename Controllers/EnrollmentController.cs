@@ -32,7 +32,9 @@ namespace TrainHub.Controllers
         [HttpGet("{id}")]
         public IActionResult GetEnrollment(int id)
         {
-            var exist = _context.Enrollments.Find(id);
+            var exist = _context.Enrollments.Include(e => e.Course).FirstOrDefault(e => e.Id == id); // What i learnt
+
+            //var exist = _context.Enrollments.Find(id); what i used to do...
             if (exist == null)
             {
                 return NotFound();
@@ -45,7 +47,7 @@ namespace TrainHub.Controllers
         [HttpDelete("{id}")]
         public IActionResult DeleteEnrollment(int id)
         {
-            var exist = _context.Enrollments.Find(id);
+            var exist = _context.Enrollments.FirstOrDefault(e => e.Id == id);
             if (exist == null)
             {
                 return NotFound();
@@ -71,7 +73,7 @@ namespace TrainHub.Controllers
         [HttpPut("{id}")]
         public IActionResult UpdateEnrollment(int id, [FromBody] Enrollment enrollment)
         {
-            var exist = _context.Enrollments.Find(id);
+            var exist = _context.Enrollments.FirstOrDefault(e => e.Id == id);
             if (exist == null)
             {
                 return NotFound();

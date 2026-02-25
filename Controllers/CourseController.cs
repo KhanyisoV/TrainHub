@@ -20,7 +20,7 @@ namespace TrainHub.Controllers
         [HttpGet("{Id}")]
         public IActionResult GetCourse(int courseId)
         {
-            var course = _context.Courses.Find(courseId);
+            var course = _context.Courses.FirstOrDefault(c => c.Id == courseId);
             if (course == null)
             {
                 return NotFound();
@@ -43,7 +43,7 @@ namespace TrainHub.Controllers
         [HttpDelete("{Id}")]
         public IActionResult DeleteCourse(int courseId)
         {
-            var course = _context.Courses.Find(courseId);
+            var course = _context.Courses.FirstOrDefault(c => c.Id == courseId);
             if (course == null)
             {
                 return NotFound();

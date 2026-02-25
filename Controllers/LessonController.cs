@@ -27,7 +27,7 @@ namespace TrainHub.Controllers
         [HttpGet("{id}")]
         public IActionResult getLesson(int id)
         {
-            var exist = _context.Lessons.Find(id);
+            var exist = _context.Lessons.FirstOrDefault(l => l.Id == id);
             if (exist == null)
             {
                 return NotFound();
@@ -41,7 +41,7 @@ namespace TrainHub.Controllers
         [HttpDelete("{id}")]
         public IActionResult DeleteLesson(int id)
         {
-            var exist = _context.Lessons.Find(id);
+            var exist = _context.Lessons.FirstOrDefault(l => l.Id == id);
             if (exist == null)
             {
                 return NotFound();
@@ -67,7 +67,7 @@ namespace TrainHub.Controllers
         [HttpPut("{id}")]
         public IActionResult UpdateLesson(int id, [FromBody] Lesson lesson)
         {
-            var exist = _context.Lessons.Find(id);
+            var exist = _context.Lessons.FirstOrDefault(l => l.Id == id);
             if (exist == null)
             {
                 return NotFound();

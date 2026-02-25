@@ -40,7 +40,6 @@ builder
         };
     });
 
-// Make sure these two lines are in the right order
 
 app.UseAuthentication();
 app.UseAuthorization();

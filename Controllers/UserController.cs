@@ -29,7 +29,7 @@ namespace TrainHub.Controllers
         [HttpGet("{id}")]
         public IActionResult GetUser(int id)
         {
-            var exist = _context.Users.Find(id);
+            var exist = _context.Users.FirstOrDefault(u => u.Id == id);
             if (exist == null)
             {
                 return NotFound();

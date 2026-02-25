@@ -4,9 +4,9 @@ namespace TrainHub.Models
 {
     public class Certificate
     {
-
         [Key]
-        public  int Id { get; set; }
+        public int Id { get; set; }
+
         [Required]
         public string Title { get; set; }
 
@@ -23,7 +23,5 @@ namespace TrainHub.Models
         public User Student { get; set; }
 
         public Course Course { get; set; }
-
-
     }
 }
